@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="w3-container post-page">
+    <div class="w3-container">
+      <div class="w3-container row">
+        {% block prepost %}{% endblock prepost %}
+        {% block post_content %}{% endblock post_content %}
+        {% block post_post %}{% endblock post_post %}
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}

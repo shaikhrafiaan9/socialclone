@@ -1,0 +1,20 @@
+{% extends "posts/post_base.html" %}
+{% block prepost %}
+
+<div class="w3-container">
+  <h2>@{{post_user.username}}</h2>
+</div>
+
+
+{% endblock prepost %}
+
+{% block post_content %}
+
+<div class="w3-container">
+  {% for post in post_list %}
+      {% include "posts/_post.html" %}
+  {% endfor %}
+
+</div>
+
+{% endblock post_content %}
